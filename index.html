@@ -1,10 +1,95 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Home</title>
-  </head>
-  <body>
-    <h1>Hello World!</h1>
-  </body>
+
+<style>
+  .center{
+    text-align:center;
+  }
+</style>
+
+
+  
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <hr id='toppage'>
+  <title>CTCS Blog</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <h1><br>CTCS Blog<br><br></h1>
+  <div class='navbar'>
+    <a href='#box1'>Natas Wargame</a>
+    <a href='#box2'>New Knowledge</a>
+    <a href='#box3'></a>
+    <a style="float:right" href='#about'>About</a>
+  </div>
+  <br>
+</head>
+
+<body>
+  <script src="script.js"></script>
+  <hr id='box1'>
+  <div class='row'>
+    <div class='pages'>
+      <div class='whitecard'>
+        <h2>
+          <a href='wargamewriteup.html' class='titlelink' alt='Click me to Read the Article!'>Natas Wargame Writeup</a>
+        </h2>
+        <p style='color:#6d87b0'>
+          <i>In this blog post is a writeup of my approach and solutions to Levels 0-25 in the Natas 
+            <a href='https://overthewire.org/wargames/natas/' style='color:orange'>wargame.</a>
+          It involves learning ethical hacking to access 'sensitive data', the password, which is hidden in each stage and entering the password allows you to continue to the next level of the wargame.
+          </i>
+        </p>
+      </div>
+      <hr id='box2' style='background-color:#f5f0e1'>
+      <div class = 'whitecard'>
+        <h2 style='text-decoration:underline;'>New Cybersecurity Knowledge</h2>
+        <p>Placeholder</p>
+      </div>
+      <div class='whitecard'>
+        <h2 id='box3'>TITLE</h2>
+        <p>Placeholder</p>
+        <a href='#'>Read More</a>
+      </div>
+      <div class='whitecard'>
+        <h2 id='box4'>TITLE</h2>
+        <p>Placeholder</p>
+        <a href='#'>Read More</a>
+      </div>
+    </div>
+    <div class='sidebar'>
+      <div class='whitecard'>
+        <h2>SIDEBAR</h2>
+        <p>Placeholder</p>
+      </div>
+    </div>
+  </div>
+<hr>
+  <div class='row'>
+    <div class='aboutme'>
+      <div class='whitecard'>
+        <h4 id='about'>About Me</h4>
+        <p>Placeholder</p>
+      </div>
+    </div>
+  </div>
+</body>
+
+<footer>
+  <div class='footer'>
+    <div class='navbar'>
+      <a href='#toppage' style='float: left;'>Back to Top</a>
+    </div>
+  </div>
+    
+</footer>
+
+<script>  
+  function myPopup() {
+    var popup = document.getElementById("myPopup");
+    popup.classList.toggle("show");
+  }
+</script>
+
+  
 </html>
