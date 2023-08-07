@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+
+    </style>
+    <meta charset="utf-8">
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <meta name="viewport" content="width=device-width">
+    <title>
+      Natas Wargame Writeup (Levels 0-25)
+    </title>
+    <hr>
+    <h1>
+      <br>Natas Wargame Writeup<br><br>
+    </h1>
+    <div class='navbar'>
+      <a href='index.html'>Return to Homepage</a>
+      <a href='https://overthewire.org/wargames/natas/' class='about' style='float: right'>Wargame</a>
+    </div>
+    <hr>
+  </head>
+
+  <body>
+    <div class='row'>
+      <div class='pages'>
+        <div class='whitecard'>
+          <h2 id='level0'>
+            <a href='http://natas0.natas.labs.overthewire.org/' class='titlelink'>
+              Level 0
+            </a>
+          </h2>
+          <img src='' class='levelimg'>
+          <p class='solution'>
+            In the first level of the Natas Wargame, the solution to acquiring the password was simple. All that was necessary was to right click and inspect and view the source code, where the password was commented out.
+          </p>
+          <hr>
+          <p class='password'>
+            <i>
+              Password: g9D9cREhslqBKtcA2uocGHPfMZVzeFK6
+            </i>
+          </p>
+          <hr>
+          <p class='fix'>
+            The real world solution to a vulnerability such as this would be to store the sensitive information separately in a file that cannot be accessed by an attacker and can only be opened by the website that needs it.
+          </p>
+        </div>
+        <div class='whitecard'>
+          <h2 id='level1'>
+            <a href='http://natas1.natas.labs.overthewire.org/' class='titlelink'>
+              Level 1
+            </a>
+          </h2>
+          <img src='' class='levelimg'>
+          <p class='solution'>
+            In the second level, the solution was to, since right clicking was disabled, use the browser shortcut combination to inspect the page and read the source code. Since I used the Macintosh OS, I had to CMD + OPT + I. (Ctrl+Shift+I for WIN OS)
+This level disabled right clicking, returning an alert saying that it was disabled whenever right clicking was attempted. 
+          </p>
+          <hr>
+          <p class='password'>
+            <i>
+              Password:h4ubbcXrWqsTo7GGnnUMLppXbOogfBZ7
+            </i>
+          </p>
+          <hr>
+          <p class='fix'>
+            The fix for a vulnerability like this should be almost identical to the solution proposed in Level 0, and to sum it up, it is to store sensitive information in a secure file. Moreover, disabling right click in the website may be detrimental towards the overall user experience which may drive users away from visiting the page as without right click, some other features may be disabled which makes it harder for the user.
+          </p>
+        </div>
+        <div class='whitecard'>
+            <h2 id='level2'>
+              <a href='http://natas2.natas.labs.overthewire.org/' class='titlelink'>
+                Level 2
+              </a>
+            </h2>
+            <img src='' class='levelimg'>
+            <p class='solution'>
+              On this level, there was a reference made to the page’s files. Upon inspecting the code, there was a pixel.png image. Upon clicking the link, I was redirected to /files/pixel.png. Then, having navigated	 to /files/, I found myself in the directory, where the password for this level was located in users.txt.
+            </p>
+            <hr>
+          <p class='password'>
+            <i>
+              Password: G6ctbMJ5Nb4cbFwhpMPSvxGHhQ7I6W8Q
+            </i>
+          </p>
+          <hr>
+          <p class='fix'>
+            The solution for this problem would be to disable access to the /files directory for regular users and store the user credentials page in a much more secure environment.
+          </p>
+        </div>
+
+  </body>
+
+  
+</html>
